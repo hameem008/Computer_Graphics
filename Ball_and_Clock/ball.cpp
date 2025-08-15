@@ -374,7 +374,7 @@ void specialKeyListener(int key, int x, int y)
         // move the cammera to the left
         // moving to the direction of the right vector
         eyex -= right_vector.x * v, eyey -= right_vector.y * v, eyez -= right_vector.z * v;
-        centerx -= right_vector.x * v, centerx -= right_vector.y * v, centerz -= right_vector.z * v;
+        centerx -= right_vector.x * v, centery -= right_vector.y * v, centerz -= right_vector.z * v;
         break;
     }
     case GLUT_KEY_RIGHT:
@@ -382,7 +382,7 @@ void specialKeyListener(int key, int x, int y)
         // move the cammera to the right
         // moving to the opposite direction of the right vector
         eyex += right_vector.x * v, eyey += right_vector.y * v, eyez += right_vector.z * v;
-        centerx += right_vector.x * v, centerx += right_vector.y * v, centerz += right_vector.z * v;
+        centerx += right_vector.x * v, centery += right_vector.y * v, centerz += right_vector.z * v;
         break;
     }
     case GLUT_KEY_UP:
